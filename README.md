@@ -1,5 +1,7 @@
 # Cati.Jr-Trainee-Dados
 
+Esse é o meu processo para evoluir durante o processo de trainee da Cati.Jr para analista de dados, o conteúdo deve ser atualizado semanalmente mostrando o que aprendi durante cada período. Não será usado auxílio de inteligências artificiais desde a escrita do README até os códigos, para que essa experi6encia seja a mais orgânica possível. Caso seja necessário o uso em algum momento, estará explicitamente dito.
+
 # Semana 1 
 
 O foco dessa semana foi revisar alguns conceitos básicos de estatística e estudar as bibliotecas NumPy e Pandas através do curso de Data Analytics da Rocketseat
