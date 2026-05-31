@@ -25,6 +25,7 @@ Dado um vetor de números inteiros, determinar se existe algum elemento repetido
 
 **Solução**
 
+```python
 import numpy as np
 
 class Solution:
@@ -40,7 +41,7 @@ class Solution:
             return False
         else:
             return True
-
+```
 ## Pandas
 
-Por enquanto só os 2 primeiros vídeos da plataforma foram vistos, o que permitiu criar um conceito básico sobre os objetivos e potenciais da biblioteca.
+Por enquanto só os 2 primeiros vídeos da plataforma foram vistos, o que permitiu de início criar um conceito básico sobre os objetivos e potenciais da biblioteca.
