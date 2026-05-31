@@ -23,7 +23,7 @@ Foram entendidos todos os comandos básicos da biblioteca NumPy. Para consolidar
 
 ### Problema **217 - Contains Duplicate**
 
-Dado um vetor de números inteiros, determinar se existe algum elemento repetido. O onjetivo não era encontrar a solução mais otimizada, mas sim provar que essa biblioteca pode resolver problemas aparentemente complexos em poucas linhas de forma intuitiva.
+Dado um vetor de números inteiros, determinar se existe algum elemento repetido. O objetivo não era encontrar a solução mais otimizada, mas sim provar que essa biblioteca pode resolver problemas aparentemente complexos em poucas linhas de forma intuitiva.
 
 **Solução**
 
