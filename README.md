@@ -46,4 +46,18 @@ class Solution:
 ```
 ## Pandas
 
-Por enquanto só os 2 primeiros vídeos da plataforma foram vistos, o que permitiu de início criar um conceito básico sobre os objetivos e potenciais da biblioteca.
+Por enquanto só os primeiros vídeos da plataforma foram vistos, o que permitiu de início criar um conceito básico sobre os objetivos e potenciais da biblioteca. Além disso, já foi possível entender a manipulações de arquivos csv e excel, abaixo há um código da importação de um dataset de treinamento de IA com dados de flores.
+
+```python
+import pandas as pd
+
+url = 'https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv'
+
+df = pd.read_csv(url)
+
+print(df)
+
+df.to_csv ('iris.csv', index = False)
+```
+
+Link do colab: https://colab.research.google.com/drive/15O_bKWJhVRKXv_imxC2LH2QjoQo8iLJO?usp=sharing
