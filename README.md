@@ -46,7 +46,7 @@ class Solution:
 ```
 ## Pandas
 
-Por enquanto só os primeiros vídeos da plataforma foram vistos, o que permitiu de início criar um conceito básico sobre os objetivos e potenciais da biblioteca. Além disso, já foi possível entender a manipulações de arquivos csv e excel, abaixo há um código da importação de um dataset de treinamento de IA com dados de flores.
+Por enquanto só os primeiros vídeos da plataforma foram vistos, o que permitiu de início criar um conceito básico sobre os objetivos e potenciais da biblioteca. Além disso, já foi possível entender a manipulações de arquivos csv e excel. Abaixo há um código em que se importou de um dataset de treinamento de IA com dados de flores, em seguida este arquivo foi salvo dentro do colab.
 
 ```python
 import pandas as pd
