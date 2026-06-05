@@ -19,7 +19,7 @@ Foi realizada uma revisão dos conceitos:
 
 ## NumPy
 
-Foram entendidos todos os comandos básicos da biblioteca NumPy. Para consolidar o aprendizado, foi resolvido um exercício da plataforma LeetCode o problema **217 - Contains Duplicate** da plataforma LeetCode.
+Foram entendidos todos os comandos básicos da biblioteca NumPy. Para consolidar o aprendizado, foi resolvido um exercício da plataforma LeetCode o problema **217 - Contains Duplicate**.
 
 ### Problema **217 - Contains Duplicate**
 
