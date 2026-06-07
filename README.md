@@ -61,3 +61,18 @@ df.to_csv ('iris.csv', index = False)
 ```
 
 Link do colab: https://colab.research.google.com/drive/15O_bKWJhVRKXv_imxC2LH2QjoQo8iLJO?usp=sharing
+
+# Semana 2
+
+Nessa segunda semana foram estudadas as aulas de Pandas e coleta de dados da Rocketseat
+
+## Aprofundando em Pandas
+
+As aulas foram assistidas por completo na qual foi possível aprender todo o básico sobre a biblioteca, incluindo:
+
+- Head, Shape, Info, Describe
+- Loc e Illoc
+- Tratamento de valores ausentes
+- Ordenação
+- Filtragens Apply e Map
+- **SQL em Python**
