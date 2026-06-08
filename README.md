@@ -75,4 +75,14 @@ As aulas foram assistidas por completo na qual foi possível aprender todo o bá
 - Tratamento de valores ausentes
 - Ordenação
 - Filtragens Apply e Map
-- **SQL em Python**
+- Concatenação de DataFrames
+
+## Coleta de dados
+
+Foi aprendido a ler dados de APIs e do Google Drive. Além disso, entendi como usar comandos SQL em Python (já tenho o conhecimento de SQL de outros projetos próprios em meu GitHub.)
+
+Segue o link do colab em que foi aplicado todo o aprendizado da semana, os dados vieram de uma planilha de jogos da Indian Premier League (IPL): https://colab.research.google.com/drive/1rIkbhMLLrdvgf5cJltSEd4kc99YjENyt?usp=sharing 
+
+## House Prices Kaggle
+
+Dei uma breve olhada no dataset da atividade e já comecei a refletir em como implementar modelos de IA. Por exemplo, o modelo k-médias prediz a classe de um certo objeto, já que o algoritmo deve devolver um número do preço do imóvel e não só uma classificação ("Preço alto", "Preço baixo", etc), deve-se pensar em uma maneira de adaptar o código ou os dados.
