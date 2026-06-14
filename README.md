@@ -88,12 +88,18 @@ Dei uma breve olhada no dataset da atividade e já comecei a refletir em como im
 
 # Semana 3
 
-Nessa semana aprendi conceitos muito importantes para tratamento de dados, sobre como identificar e lidar com **duplicatas, valores ausentes e outliers**. Além de outros conceitos como:
+A semana 3 teve como foco o final da sessão de Data Analytics e o início do aprendizado em machine learning.
+
+## Tratamento de dados
+
+Nessa semana aprendi conceitos muito importantes sobre como identificar e lidar com **duplicatas, valores ausentes e outliers**. Além de outros conceitos como:
 
 - Plotagem de gráficos
 - Correlação + Heatmap
 - Normalização
 - One hot e Label Encoding
+
+## Primeiro teste com machine learning
 
 Segue o link do colab que consiste em uma implementação do modelo linear do scikitlearn em um dataset simples de uma clínica. O objetivo foi tratar os dados e criar um código para prever o custo do seguro de saúde, com base na idade, gênero, IMC, quantidade de filhos, se é fumante e a região.
 
