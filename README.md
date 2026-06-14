@@ -72,7 +72,6 @@ As aulas foram assistidas por completo na qual foi possível aprender todo o bá
 
 - Head, Shape, Info, Describe
 - Loc e Illoc
-- Tratamento de valores ausentes
 - Ordenação
 - Filtragens Apply e Map
 - Concatenação de DataFrames
@@ -86,3 +85,16 @@ Segue o link do colab em que foi aplicado todo o aprendizado da semana, os dados
 ## House Prices Kaggle
 
 Dei uma breve olhada no dataset da atividade e já comecei a refletir em como implementar modelos de IA. Por exemplo, o modelo k-médias prediz a classe de um certo objeto, já que o algoritmo deve devolver um número do preço do imóvel e não só uma classificação ("Preço alto", "Preço baixo", etc), deve-se pensar em uma maneira de adaptar o código ou os dados.
+
+# Semana 3
+
+Nessa semana aprendi conceitos muito importantes para tratamento de dados, sobre como identificar e lidar com **duplicatas, valores ausentes e outliers**. Além de outros conceitos como:
+
+- Plotagem de gráficos
+- Correlação + Heatmap
+- Normalização
+- One hot e Label Encoding
+
+Segue o link do colab que consiste em uma implementação do modelo linear do scikitlearn em um dataset simples de uma clínica. O objetivo foi tratar os dados e criar um código para prever o custo do seguro de saúde, com base na idade, gênero, IMC, quantidade de filhos, se é fumante e a região.
+
+https://colab.research.google.com/drive/1WuiPqPrTFdTK5WSJgQyhHUEueNQNSs9T?usp=sharing
