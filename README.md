@@ -104,3 +104,16 @@ Nessa semana aprendi conceitos muito importantes sobre como identificar e lidar 
 Segue o link do colab que consiste em uma implementação do modelo linear do scikitlearn em um dataset simples de uma clínica. O objetivo foi tratar os dados e criar um código para prever o custo do seguro de saúde, com base na idade, gênero, IMC, quantidade de filhos, se é fumante e a região.
 
 https://colab.research.google.com/drive/1WuiPqPrTFdTK5WSJgQyhHUEueNQNSs9T?usp=sharing
+
+# Semana 4
+
+Como sugerido, nessa semana começou-se os procedimentos no dataset de House Prices. Por enquanto, os dados foram exportados, as duplicatas foram removidas. Ao se olhar a quantia de valores nulos a coluna "LotFrontage" apresentou um número considerável, para corrigir isso foi treinado um modelo de regressão linear simples usando as colunas "LotArea" e "LotConfig", as quais são colunas sem valores ausentes com alta correlação. Usando o modelo treinado, os valores de "LotFrontage" nulos foram corrigidos.
+
+Segue o link do colab: https://colab.research.google.com/drive/1XHAeAK-TeyHjPVSqJ6KpH5KKPdGV3_je?usp=sharing
+
+Além disso, também foram aprendidos os seguintes conceitos e como implementá-los em Python:
+
+- K-fold
+- Pipeline de pré-processamento
+- Teste de normalidade
+- Salvamento de modelos e API
