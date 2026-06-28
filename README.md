@@ -107,7 +107,7 @@ https://colab.research.google.com/drive/1WuiPqPrTFdTK5WSJgQyhHUEueNQNSs9T?usp=sh
 
 # Semana 4
 
-Como sugerido, nessa semana começou-se os procedimentos no dataset de House Prices. Por enquanto, os dados foram exportados, as duplicatas foram removidas. Ao se olhar a quantia de valores nulos a coluna "LotFrontage" apresentou um número considerável, para corrigir isso foi treinado um modelo de regressão linear simples usando as colunas "LotArea" e "LotConfig", as quais são colunas sem valores ausentes com alta correlação. Usando o modelo treinado, os valores de "LotFrontage" nulos foram corrigidos.
+Como sugerido, nessa semana começou-se os procedimentos no dataset de House Prices.
 
 Segue o link do colab: https://colab.research.google.com/drive/1XHAeAK-TeyHjPVSqJ6KpH5KKPdGV3_je?usp=sharing
 
@@ -117,3 +117,20 @@ Além disso, também foram aprendidos os seguintes conceitos e como implementá-
 - Pipeline de pré-processamento
 - Teste de normalidade
 - Salvamento de modelos e API
+
+# Semana 5
+
+Concluiu-se o tratamento de dados do dataset de House Prices, com destaque para as seguintes decisões:
+
+- Os valores nulos da coluna LotFrontage foram subsituídos a partir de um modelo de regressão linear usando outras duas colunas: LotArea e LotConfig. Como queria-se aproximadamente a medida da casa que tinha contato com a rua, não é difícl perceber que a frente é proporcional à raiz quadrada da área e linearmente proporcional a configuração do lote. Assim, esses valores ausentes foram aproximados pela fórmula: c2 * ​LotConfig + c1 * sqrt(LotArea) + c0. Nos quais c2, c1 e c0 são constantes.
+- Ao se calcular o número de outliers o resultado foi superior a 10% dos dados. Com isso, ao invés de retirar todos eles, somente os valores de SalePrice (coluna alvo) maiores que 500000 foram excluídos. O que totalizou menos de 1% da amostra, garantindo que informações cruciais não fossem perdidas.
+- Colunas não numéricas com mais 10 elementos únicos foram tratadas com target-encoding ao invés de one-hot-encoding, para evitar sobrecarga de colunas e garantir melhor generalização. Vale destacar que **essa técnica alternativa foi aprendida durante esta semana enquanto pesquisava em como tratar casos do gênero**.
+
+Foram feitos dois treinamentos do modelo de regressão linear, um sem K-Fold e outro com (5-Fold). Seguem os resultados medidos com a métrica de R² score:
+
+| Método | Resultado |
+|--------|----------:|
+| Sem K-Fold | 0.860 |
+| Com K-Fold (média ± desvio padrão) | 0.755 ± 0.132 |
+
+Conclui-se que esse modelo de regressão linear pareceu ter um bom resultado à primeira vista, mas ao se analisar o resultado do 5-Fold percebe-se que essa generalização não é tão boa assim. Logo, outros modelos de Machine Learning devem ser testados.
