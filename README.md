@@ -131,6 +131,6 @@ Foram feitos dois treinamentos do modelo de regressão linear, um sem K-Fold e o
 | Método | Resultado |
 |--------|----------:|
 | Sem K-Fold | 0.860 |
-| Com K-Fold (média ± desvio padrão) | 0.755 ± 0.132 |
+| Com K-Fold (média ± desvio padrão) | 0.765 ± 0.126 |
 
 Conclui-se que esse modelo de regressão linear pareceu ter um bom resultado à primeira vista, mas ao se analisar o resultado do 5-Fold percebe-se que essa generalização não é tão boa assim. Logo, outros modelos de Machine Learning devem ser testados.
