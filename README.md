@@ -171,8 +171,6 @@ def categoria(preco):
         return "Average"
     else:
         return "High"
-
-df_train["Sale"] = df_train["SalePrice"].apply(categoria)
 ```
 Os dados foram separados com base nas informações da tabela df.describe().
 
@@ -185,8 +183,8 @@ Modelo de rede neural adaptado para devolver valores numéricos ao invés de atr
 | Algoritmo | Métrica | Melhor Configuração | Resultado |
 |-----------|----------|--------------------|-----------|
 | K-Means | Método do Cotovelo | K = 4 | Erro: **40.000** |
-| KNN (3 classes) | Acurácia | K = 3 | **0,81** |
-| KNN (4 classes) | Acurácia | K = 13 | **0,78** |
+| KNN (3 classes) | Acurácia | k = 3 | **0,81** |
+| KNN (4 classes) | Acurácia | k = 13 | **0,78** |
 | MLPRegressor | R² Médio | default | **0,509 ± 0,048** |
 
 ## Streamlit
