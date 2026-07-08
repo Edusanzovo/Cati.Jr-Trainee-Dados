@@ -134,3 +134,63 @@ Foram feitos dois treinamentos do modelo de regressão linear, um sem K-Fold e o
 | Com K-Fold (média ± desvio padrão) | 0.765 ± 0.126 |
 
 Conclui-se que esse modelo de regressão linear pareceu ter um bom resultado à primeira vista, mas ao se analisar o resultado do 5-Fold percebe-se que essa generalização não é tão boa assim. Logo, outros modelos de Machine Learning devem ser testados.
+
+# Semana 6
+
+Nesta semana foram testados os algoritmos K-Means, KNN e MPLRegressor. Além do mais, foi implementado o streamlit, permitindo aos usuários preverm o valor de uma casa ao fornecerem algumas informações.
+
+## K-Means
+
+O pré-processamento foi praticamente idêntico ao do algoritmo de regressão linear, a única diferença é que usou-se o ordinal encoding em colunas não numéricas de mais de 10 elementos únicos. Essa decisão foi tomada porque não é possível usar target encoding em algoritmos não supervisionados, que é o caso do k-means.
+
+Analisando o gráfico do cotovelo, o valor ideal para K (número de agrupamentos) foi 4 e o erro foi de 40000 unidades.
+
+## KNN
+
+Após o pré-processamento do algoritmo da regressão linear, os números da coluna "SalePrice" foram transformadas em strings. Foi testado o algoritmo com K = 4 e K =3, respectivamente foram usadas essas fórmulas para adaptar os dados da coluna alvo.
+
+Foi feito uma iteração para descobrir qual o melhor k (vizinhos) para esse problema.
+
+```python
+# 4 classes
+def categoria(preco):
+    if preco <= 129900:
+        return "Low"
+    elif preco <= 162500:
+        return "Low-Average"
+    elif preco <= 213000:
+        return "High-Average"
+    else:
+        return "High"
+
+# 3 classes
+def categoria(preco):
+    if preco <= 129900:
+        return "Low"
+    elif preco <= 213000:
+        return "Average"
+    else:
+        return "High"
+
+df_train["Sale"] = df_train["SalePrice"].apply(categoria)
+```
+Os dados foram separados com base nas informações da tabela df.describe().
+
+## MPLRegressor
+
+Modelo de rede neural adaptado para devolver valores numéricos ao invés de atribuir grupos. Esse algoritmo foi o pior até o momento, possivelmente por ser muito complexo para um problema com relativamente "poucos dados".
+
+## Resultados Obtidos
+
+| Algoritmo | Métrica | Melhor Configuração | Resultado |
+|-----------|----------|--------------------|-----------|
+| K-Means | Método do Cotovelo | K = 4 | Erro: **40.000** |
+| KNN (3 classes) | Acurácia | K = 3 | **0,81** |
+| KNN (4 classes) | Acurácia | K = 13 | **0,78** |
+| MLPRegressor | R² Médio | default | **0,509 ± 0,048** |
+
+## Streamlit
+
+Como a tabela possuí muitas colunas seria inviável ao usuário ter que digitar todas elas. Por isso, usando um gráfico de correlação, viu-se que os 3 atributos com maior impacto no "SalePrice" eram: área de vivência, quantidade de carros que cabem na garagem e qualidade geral.
+
+Assim, treinou-se um modelo só com esses 3 atributos.
