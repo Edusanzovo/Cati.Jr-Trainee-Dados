@@ -192,3 +192,25 @@ Modelo de rede neural adaptado para devolver valores numéricos ao invés de atr
 Como a tabela possuí muitas colunas seria inviável ao usuário ter que digitar todas elas. Por isso, usando um gráfico de correlação, viu-se que os 3 atributos com maior impacto no "SalePrice" eram: área de vivência, quantidade de carros que cabem na garagem e qualidade geral.
 
 Assim, treinou-se um modelo só com esses 3 atributos.
+
+# Semana 7
+
+Testes e resultados finais.
+
+## Comparação dos Modelos
+
+| Tratamento dos Outliers | Linear Regression (R² ± DP) | Random Forest (R² ± DP) | Gradient Boosting (R² ± DP) | Ensemble (R²) |
+|-------------------------|----------------------------:|------------------------:|----------------------------:|--------------:|
+| Sem remoção | **0.715 ± 0.171** | **0.917 ± 0.011** | **0.931 ± 0.007** | **0.939** |
+| Remoção > 700000 | **0.809 ± 0.113** | **0.910 ± 0.020** | **0.919 ± 0.017** | **0.932** |
+| Remoção > 500000 | **0.765 ± 0.125** | **0.868 ± 0.024** | **0.877 ± 0.040** | **0.903** |
+| Remoção de todos os outliers | **0.785 ± 0.121** | **0.924 ± 0.005** | **0.926 ± 0.008** | **0.924** |
+
+## Resultados do Ensemble
+
+| Tratamento dos Outliers | R² | MSE | RMSE | Kaggle Esperado (Log-RMSE) |
+|-------------------------|---:|------------:|---------:|---------------------------:|
+| Sem remoção | **0.939** | 404.397.464 | 20.110 | **0.01012** |
+| Remoção > 700000 | **0.932** | 358.910.102 | 18.945 | **0.01056** |
+| Remoção > 500000 | **0.903** | 468.213.205 | 21.638 | **0.01800** |
+| Remoção de todos os outliers | **0.924** | 269.250.694 | 16.409 | **0.01143** |
